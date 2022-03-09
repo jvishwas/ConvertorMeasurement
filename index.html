@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="body-container">
+        <h2>Convertor</h2>
+        <p>You Can Convert to Specific Option you Can choose.</p>
+        <div class="wrapper">
+        <div class="container-1 input-design"> 
+            <input type="text" id="text1" name="text1" placeholder="Value" value="1" onchange="inputunits(this,'left');">
+            <select name="text1" id="selection-1" class="select-design" onchange="selectunits(this,'left');">
+                <option value="feet" selected>Feet</option>
+                <option value="inch">Inch</option>
+                <option value="meter">Meter</option>
+                <option value="cm">Centimeter</option>
+                <option value="mili">Milimeter</option>
+                <option value="yard">Yard</option>
+                
+            </select>
+        </div>
+        <div class="container-2 input-design">
+            <input type="text" id="text2" name="text2" placeholder="Value" onchange="inputunits(this,'right');">
+            <select name="text1" id="selection-2"  class="select-design" onchange="selectunits(this,'right');">
+                <option value="feet">Feet</option>
+                <option value="inch" selected>Inch</option>
+                <option value="meter">Meter</option>
+                <option value="cm">Centimeter</option>
+                <option value="mili">Milimeter</option>
+                <option value="yard">Yard</option>
+            
+            </select>
+        </div>
+       
+    </div>
+
+    <script src="convertor.js"></script>
+</body>
+</html>
